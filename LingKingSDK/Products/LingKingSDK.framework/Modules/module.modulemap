@@ -1,0 +1,6 @@
+framework module LingKingSDK {
+  umbrella header "LingKingSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

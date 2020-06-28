@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  LingKingSDK
+
+  Created by leoan on 2020/4/22.
+  Copyright © 2020 dml1630@163.com. All rights reserved.
+*/
+"KEY"                     = "繁体中文";
+"Touch To Start" = "点击开始";
+"I have read and agree" = "我已阅读并同意";
+"User Agreement" = "用户协议";
+"Privacy Policy" = "隐私条款";
+"ACCOUNT SETTING" = "账户设置";
+"Change"="切换";
+"ID user"="ID user";
+"Link your account"="绑定你的账号";
+"Logout"="登出";
+"The account is already bound"="该账号已经绑定";
+"Link your account to facebook or Google Play to backup your progress"="将您的帐户链接到Facebook或Google Play，以备份您的进度";
+"OR"="或";
+"LICENSE AGREEMENT"="许可协议";
+"Facebook"="Facebook";
+"Google"="Google";
