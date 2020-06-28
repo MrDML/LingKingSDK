@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LESDKConf : NSObject<NSCoding>
 - (instancetype)initWithDictonary:(NSDictionary *)dict;
+@property(nonatomic, copy) NSString        *pay_type;
 @property(nonatomic, copy) NSString        *ready_type;
 @property(nonatomic, copy) NSString        *mode_debug;
 @property(nonatomic, strong) NSDictionary  *sdk_config;
