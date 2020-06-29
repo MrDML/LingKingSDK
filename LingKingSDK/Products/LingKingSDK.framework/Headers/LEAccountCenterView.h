@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LEAccountCenterView : UIView
 + (instancetype)instanceAccountCenterView;
+@property (nonatomic, copy) void(^closeAlterViewHandler)(void);
 @property (nonatomic, copy) void(^changeHandler)(void);
 @property (nonatomic, copy) void(^linkAccountHandler)(void);
 @property (nonatomic, copy) void(^logoutHandler)(void);

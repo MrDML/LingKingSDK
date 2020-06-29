@@ -17,7 +17,7 @@
 "Privacy Policy" = "سياسة الخصوصية";
 "ACCOUNT SETTING" = "إعدادات الحساب";
 "Change"="تبديل الحساب";
-"ID user"="مستخدم معرف";
+"User ID"="معرف المستخدم";
 "Link your account"="ربط حسابك";
 "Logout"="تسجيل الخروج";
 "The account is already bound"="الحساب مرتبط بالفعل";
@@ -26,3 +26,4 @@
 "LICENSE AGREEMENT"="اتفاقية الترخيص";
 "Facebook"="الفيسبوك";
 "Google"="جوجل";
+"Please check the agreement" = "يرجى التحقق من الاتفاقية";
