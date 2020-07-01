@@ -26,6 +26,7 @@ typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 - (void)storePayCreateOrderIsSuccess:(BOOL)isSuccess withError:(NSError *)error;
 - (void)storePayFinishPay:(BOOL)isSuccess withError:(NSError *)error;
 - (void)productsRequest:(NSArray <LESKProduct *>*)request invalidProductIdentifiers:(NSArray<NSString *> *)invalidProductIdentifiers didFailWithError:(NSError *)error;
+- (void)subscribeQueryFinishedInfo:(NSDictionary *)result productId:(NSString *)productId failWithError:(NSError *)error;
 @end
 
 @interface LEStorePay : NSObject

@@ -23,7 +23,8 @@ typedef NS_ENUM(NSInteger,LETOASTSTYLE) {
     LETOASTSTYLE_Pay,
     LETOASTSTYLE_Verification, // 验证
     LETOASTSTYLE_Notice,  // 注意
-    LETOASTSTYLE_License // 许可协议
+    LETOASTSTYLE_License, // 许可协议
+    LETOASTSTYLE_Alert  // 重新登录提示
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,6 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 点击banner的回调
 @property (nonatomic, copy) void(^selectBannerAtIndex)(NSInteger index);
 
+
+// 点击重新登录的回调
+@property (nonatomic, copy) void(^againLoginComplete)();
 
 @property (nonatomic,assign)LETOASTSTYLE toastStyle;
 

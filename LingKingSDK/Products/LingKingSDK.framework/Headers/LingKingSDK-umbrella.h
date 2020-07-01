@@ -56,6 +56,7 @@
 #import "LESignInApple.h"
 #import "LEAccountCenterView.h"
 #import "LEAccountShowView.h"
+#import "LEAlertView.h"
 #import "LEAuthView.h"
 #import "LECheckAgeView.h"
 #import "LEFoatView.h"

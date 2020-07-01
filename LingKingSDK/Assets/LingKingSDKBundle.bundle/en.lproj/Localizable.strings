@@ -18,7 +18,7 @@
 "Privacy Policy" = "Privacy Policy";
 "ACCOUNT SETTING" = "ACCOUNT SETTING";
 "Change"="change";
-"ID user"="ID user";
+"User ID"="User ID";
 "Link your account"="Link your account";
 "Logout"="Logout";
 "The account is already bound"="The account is already bound";
@@ -28,3 +28,6 @@
 "Facebook"="Facebook";
 "Google"="Google";
 "Please check the agreement"="Please check the agreement";
+"Tips"="Tips";
+"Invalid login or account login on other devices"="Invalid login or account login on other devices";
+"Again login"="Again login";

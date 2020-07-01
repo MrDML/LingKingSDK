@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LingKingSDK'
-  s.version          = '0.1.38'
+  s.version          = '0.1.39'
   s.summary          = 'A short description of LingKingSDK.'
 
 # This description is used to generate tags and improve search results.
