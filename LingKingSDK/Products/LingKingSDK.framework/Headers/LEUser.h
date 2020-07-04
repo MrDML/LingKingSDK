@@ -11,20 +11,33 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LEUser : NSObject<NSCoding>
-@property (nonatomic, copy) NSString *id;
-@property (nonatomic, copy) NSString *age;
-@property (nonatomic, copy) NSString *timestamp;
-@property (nonatomic, copy) NSString *verify;
-@property (nonatomic, copy) NSString *login_type;
-@property (nonatomic, copy) NSString *ppid;
-@property (nonatomic, copy) NSString *is_new_user;
-@property (nonatomic, copy) NSString *nick_name;
-@property (nonatomic, copy) NSString *third_id; // 是否绑定过账号
-@property (nonatomic, copy) NSString *head_icon;
-@property (nonatomic, copy) NSString *token;
-@property (nonatomic, copy) NSString *create_time;
-@property (nonatomic, copy) NSString *gender;
 
+/// 用户唯一id标识
+@property (nonatomic, copy) NSString *id;
+/// 年龄
+@property (nonatomic, copy) NSString *age;
+/// 系统时间
+@property (nonatomic, copy) NSString *timestamp;
+/// 校验字符串
+@property (nonatomic, copy) NSString *verify;
+/// 登录类型，参考枚举类 Guest|Passport|Facebook|Google|Fkxyr|FireBase
+@property (nonatomic, copy) NSString *login_type;
+/// 账号编号
+@property (nonatomic, copy) NSString *ppid;
+/// 是否是新用户
+@property (nonatomic, copy) NSString *is_new_user;
+/// 昵称
+@property (nonatomic, copy) NSString *nick_name;
+/// 第三方编号
+@property (nonatomic, copy) NSString *third_id;
+/// 用户头像
+@property (nonatomic, copy) NSString *head_icon;
+/// token
+@property (nonatomic, copy) NSString *token;
+/// 用户创建时间
+@property (nonatomic, copy) NSString *create_time;
+/// 性别 m-男 f-女
+@property (nonatomic, copy) NSString *gender;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 + (LEUser *)getUser;
