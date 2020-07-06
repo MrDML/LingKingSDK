@@ -25,3 +25,4 @@
 "Tips"="温馨提示";
 "Invalid login or account login on other devices"="登录失效或账号在其它设备登录";
 "Again login"="重新登录";
+"Could not log in. Please check your network connection and try again" = "Could not log in. Please check your network connection and try again";

@@ -9,12 +9,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "LEReachability.h"
 typedef NS_ENUM(NSInteger, LENetworkStatus) {
     LE_NotReachable,
     LE_ReachableViaWiFi,
     LE_ReachableViaWWAN
 };
+
 
 @protocol LingKingSDKManagerDelegate <NSObject>
 
@@ -36,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 由于目前只支持中文、繁体中文、英文、阿拉伯。故该属性只支持zh-Hans、zh-Hant、en、ar四种值，其余值无效。
 @property (copy, nonatomic) NSString *preferredLanguage;
 
+@property (nonatomic , assign,readonly) NetworkStatus   networkStatus;
 /// 语言bundle，preferredLanguage变化时languageBundle会变化
 /// 可通过手动设置bundle，让选择器支持新的的语言（需要在设置preferredLanguage后设置languageBundle）。欢迎提交PR把语言文件提交上来~
 @property (strong, nonatomic) NSBundle *_Nullable languageBundle;

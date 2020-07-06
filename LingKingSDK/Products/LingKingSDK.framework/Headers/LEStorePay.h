@@ -23,16 +23,34 @@ typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 @protocol LEStoreDelegate <NSObject>
 
 @optional
+
+/// 创建订单成功回调
+/// @param isSuccess isSuccess description
+/// @param error error description
 - (void)storePayCreateOrderIsSuccess:(BOOL)isSuccess withError:(NSError *)error;
+
+/// 支付成功回调
+/// @param isSuccess isSuccess description
+/// @param error error description
 - (void)storePayFinishPay:(BOOL)isSuccess withError:(NSError *)error;
+
+/// 请求商品列表接口
+/// @param request request 有效商品集合
+/// @param invalidProductIdentifiers 无效商品集合
+/// @param error error description
 - (void)productsRequest:(NSArray <LESKProduct *>*)request invalidProductIdentifiers:(NSArray<NSString *> *)invalidProductIdentifiers didFailWithError:(NSError *)error;
+
+/// 查询订阅回调
+/// @param result result description
+/// @param productId productId description
+/// @param error error description
 - (void)subscribeQueryFinishedInfo:(NSDictionary *)result productId:(NSString *)productId failWithError:(NSError *)error;
+
 @end
 
 @interface LEStorePay : NSObject
 @property (nonatomic, weak) id <LEStoreDelegate> delegate;
 + (instancetype)instance;
-
 
 /// 拉取所有商品信息
 - (void)requestProductDatas;
