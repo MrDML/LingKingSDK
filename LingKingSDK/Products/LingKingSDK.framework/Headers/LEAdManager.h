@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LEAdManager.h"
 NS_ASSUME_NONNULL_BEGIN
 
 // 广告类型
@@ -87,6 +87,7 @@ typedef NS_ENUM(NSInteger,LEAD_FULLSCREENVIDEO_EVENT){
 
 
 
+
 // 广告是否出初始化成功回调
 typedef void(^LEINITSUCCESSAD)(BOOL isSuccess);
 
@@ -107,14 +108,6 @@ typedef void(^LEADFULLSCREENVIDEAD)(LEAD_FULLSCREENVIDEO_EVENT event,NSError * _
 
 @interface LEAdManager : NSObject
 
-/* 测试先暂用此标志
- 顺序 1.穿山甲
- 顺序 2.facebook
- 顺序 3.google
- 顺序 4.IronSrc
- 
- **/
-@property (nonatomic,assign) int flagPlatform;
 // 广告是否初始化成功
 @property (nonatomic, copy) LEINITSUCCESSAD isSuccessADHander;
 // 横屏广告的回调

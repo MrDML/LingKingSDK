@@ -14,6 +14,15 @@ typedef NS_ENUM(NSInteger,LINGKINGADVSTYLE) {
     LINGKINGADVSTYLE_Interstitial, // 插屏广告
     LINGKINGADVSTYLE_RewardedVideo // 激励广告
 };
+
+typedef NS_ENUM(NSInteger,LKPLATFORM) {
+    LKPLATFORM_NONE = 0,
+    LKPLATFORM_TITOK,     //1.穿山甲
+    LKPLATFORM_FACEBOOK,  //2.facebook
+    LKPLATFORM_GOOGLE,    //3.google
+    LKPLATFORM_IRONSRC    //4.IronSrc
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol LEAdverManagerDelegate <NSObject>
@@ -63,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak) id <LEAdverManagerDelegate>delegate;
 
-@property (nonatomic,assign) int flagPlatform;
+@property (nonatomic,assign) LKPLATFORM platform;
 
 + (instancetype)instance;
 
@@ -81,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param viewController viewController description
 /// @param superView superView description
 - (void)initializationRootViewController:(UIViewController *_Nullable)viewController superView:(UIView *_Nullable)superView;
-// 指定具体的广告类型
+
 
 /// 从将Banner父视图上移除广告视图
 - (void)removeBannerFromSuperViewAd;
