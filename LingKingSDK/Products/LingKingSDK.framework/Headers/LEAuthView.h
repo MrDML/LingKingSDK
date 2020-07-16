@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void(^doAuthAppleHandler)(void);
 @property (nonatomic, copy) void(^informationHandler)(void);
 @property (nonatomic, copy) void(^privacyPolicyHandler)(void);
+@property (nonatomic, copy) void(^selectedHandler)(BOOL isSelected);
+@property (nonatomic, assign) BOOL selected;
 - (void)hiddenThirdPlatform;
 - (void)setCheckState:(BOOL)isCheck;
 @end

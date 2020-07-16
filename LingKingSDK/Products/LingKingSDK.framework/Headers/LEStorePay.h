@@ -34,6 +34,9 @@ typedef void (^IAPCompletionHandle)(SIAPPurchType type,NSData *data);
 /// @param error error description
 - (void)storePayFinishPay:(BOOL)isSuccess withError:(NSError *)error;
 
+/// 取消支付回调
+- (void)storePayCancelPay;
+
 /// 请求商品列表接口
 /// @param request request 有效商品集合
 /// @param invalidProductIdentifiers 无效商品集合

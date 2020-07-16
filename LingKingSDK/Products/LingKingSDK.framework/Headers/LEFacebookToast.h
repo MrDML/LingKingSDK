@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 // 点击重新登录的回调
-@property (nonatomic, copy) void(^againLoginComplete)();
+@property (nonatomic, copy) void(^againLoginComplete)(void);
 
 @property (nonatomic,assign)LETOASTSTYLE toastStyle;
 
@@ -53,6 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 协议连接
 @property (nonatomic, strong) NSURL *webURL;
+
+//User Agreement : 1
+//Privacy Policy : 2
+@property (nonatomic, assign) int protocol;
 
 
 // 是否禁用绑定账号
